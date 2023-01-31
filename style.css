@@ -11,13 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .conteiner {
     height: fit-content;
-    width: 25rem;
+    max-width: 22rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -41,21 +40,21 @@ img {
 }
 
 h1 {
-    font-size: 28px;
     color: hsl(218, 44%, 22%);
+    font-size: 1.25rem;
 }
 
 p {
-    font-size: 15px;
     color: hsl(220, 15%, 55%);
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+h1, p {
+    text-align: center;
+    margin: 0.5rem 0.5rem 0 0.5rem;
 }
 
 footer {
     margin-top: 25px;
-}
-
-@media screen and (max-width: 767px) {
-    .conteiner {
-        width: 22rem;
-    }
 }
